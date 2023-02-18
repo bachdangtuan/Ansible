@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Test ping
+      ping:
+    - name: Test ping
+      command:
+        cmd: ip a
