@@ -1,0 +1,21 @@
+---
+# Playbook cho tất cả các host
+- hosts: all
+  tasks:
+    # Tạo thư mục
+    - name: Tạo thư mục
+      file:
+        path: /home/ubuntu/demo
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+        mode: "0755"
+
+    # Copy file từ server ansible vào thư mục vừa tạo
+    - name: Copy file từ Server vào thư mục mới
+      copy:
+        src: /home/ubuntu/ansible/hihi.txt
+        dest: /home/ubuntu/demo/hihi.txt
+        owner: ubuntu
+        group: ubuntu
+        mode: "0644"
