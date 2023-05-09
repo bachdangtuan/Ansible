@@ -5,17 +5,17 @@
     # Tạo thư mục
     - name: Make folder 
       file:
-        path: /home/ubuntu/demo
+        path: /home/isofh/demo
         state: directory
-        owner: ubuntu
-        group: ubuntu
+        owner: isofh
+        group: isofh
         mode: "0755"
 
     # Copy file từ server ansible vào thư mục vừa tạo
     - name: Copy shell check server to Project
       copy:
-        src: /home/ubuntu/ansible/hihi.txt
-        dest: /home/ubuntu/demo/hihi.txt
-        owner: ubuntu
-        group: ubuntu
+        src: /home/isofh/ansible/hihi.txt
+        dest: /home/isofh/demo/hihi.txt
+        owner: isofh
+        group: isofh
         mode: "0644"
