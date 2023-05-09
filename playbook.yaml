@@ -1,6 +1,6 @@
 ---
 # Playbook cho tất cả các host
-- hosts: jira
+- hosts: all
   tasks:
     # Tạo thư mục
     - name: Make folder 
