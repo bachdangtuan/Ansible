@@ -7,8 +7,8 @@
       file:
         path: /home/ubuntu/demo
         state: directory
-        owner: isofh
-        group: isofh
+        owner: ubuntu
+        group: ubuntu
         mode: "0755"
 
     # Copy file từ server ansible vào thư mục vừa tạo
@@ -16,6 +16,6 @@
       copy:
         src: /home/isofh/ansible/hihi.txt
         dest: /home/ubuntu/demo/hihi.txt
-        owner: isofh
-        group: isofh
+        owner: ubuntu
+        group: ubuntu
         mode: "0644"
