@@ -4,15 +4,15 @@
   tasks:
     - name: Make folder 
       file:
-        path: /home/isofh/demo
+        path: /home/isofh/monitorserver
         state: directory
         owner: isofh
         group: isofh
         mode: "0755"
     - name: Copy shell check server to Project
       copy:
-        src: /home/isofh/ansible/hihi.txt
-        dest: /home/isofh/demo
+        src: /home/isofh/ansible/monitorScriptCheck.sh
+        dest: /home/isofh/monitorserver
         owner: isofh
         group: isofh
         mode: "0644"
