@@ -6,13 +6,13 @@
       file:
         path: /home/isofh/demo
         state: directory
-        # owner: isofh
-        # group: isofh
-        mode: "0644"
+        owner: isofh
+        group: isofh
+        mode: "0755"
     - name: Copy shell check server to Project
       copy:
         src: /home/isofh/ansible/hihi.txt
         dest: /home/isofh/demo
-        # owner: isofh
-        # group: isofh
+        owner: isofh
+        group: isofh
         mode: "0644"
