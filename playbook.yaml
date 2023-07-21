@@ -6,13 +6,13 @@
       file:
         path: /home/isofh/monitorserver
         state: directory
-        owner: isofh
-        group: isofh
+        # owner: isofh
+        # group: isofh
         mode: "0755"
     - name: Copy shell check server to Project
       copy:
         src: /home/isofh/ansible/monitorScriptCheck.sh
         dest: /home/isofh/monitorserver
-        owner: isofh
-        group: isofh
+        # owner: isofh
+        # group: isofh
         mode: "0644"
